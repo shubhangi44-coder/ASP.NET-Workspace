@@ -1,0 +1,101 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../Admin/Images/food9.jpg');
+    background-size:cover;
+    font-family: sans-serif;
+}
+
+.head {
+    padding: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    color: gold;
+    margin-top: 20px;
+}
+
+.link {
+    color: rgb(255,217,9);
+    text-align: center;
+}
+
+.loginbox {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 530px;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+    // text-align: center;
+    border-radius: 15px;
+}
+
+.newuser {
+    margin-top: 15px;
+    text-align: center;
+    display: block;
+}
+
+::placeholder {
+    color: rgba(255,255,255,.5);
+    font-size:small;
+}
+
+/*.btnsubmit:hover {
+    background-color: rgb(255,217,9);
+}*/
+
+.btn{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 300px;
+    font-size: 16px;
+    color: #fff;
+    background-color: maroon;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: linear;
+}
+
+
+.lblname, .lblmob, .lblemail, .lblpass, .lbllogin, .newuser {
+    font-size:large;
+    color: #fff;
+    margin-top: 0px;
+}
+
+.txtname, .txtemail, .txtpass, .txtmobile, .txtuser {
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    height: 30px;
+    color: #fff;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.txtemail, .txtpass, .btnsubmit, .txtname, .txtmobile {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.btnsubmit {
+    text-align: center;
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(255,9,9);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+
+.list {
+    background-color: black;
+}
