@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="Food_Order_System.Website.User" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: palegreen;
+        }
+
+        #tables td, th {
+            padding: 8px;
+        }
+
+        #tables th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color:maroon;
+            color: White;
+        }
+
+        menu_discDiv {
+        }
+
+        orderDetalDiv {
+            float: right;
+        }
+
+        menuDiv {
+        }
+
+        /*menu_descDiv p {
+            line-height: 1.5em;
+            font-size: 20px;
+        }*/
+
+        InLine {
+            display: inline;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!--Navbar Header Start Here-->
+            <div class="navbar-header">
+                <a class="navbar-brand">Food Factory</a>
+            </div>
+            <!--Navbar Header End Here-->
+            <!--Menu Start Here-->
+            <ul class="nav navbar-nav">
+                <li><a href="Home.aspx">Home</a></li>
+                <li ><a href="menu.aspx">Menu</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="category.aspx">Category</a></li>
+                <%--<!--dropdown Menu Start-->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Category  
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" style="color:black">
+                        <li><a href="#"></a>Indian</li>
+                        <li><a href="#"></a>Chinees</li>
+                        <li><a href="#">Fast Food</a></li>
+                        <li><a href="#">Dessert</a></li>
+                    </ul>
+                </li>
+                <!--dropdown Menu End-->--%>
+
+            </ul>
+            <!--Menu End Here-->
+
+            <!--Right Aligned Menu Start-->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="user_register.aspx"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                <li><a href="user_login.aspx"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                <li><a href="view_cart.aspx"><span class="glyphicon glyphicon-shopping-cart"></span>My Cart</a></li>
+
+            </ul>
+            <!--Right Aligned Menu End-->
+        </div>
+
+    </nav>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
